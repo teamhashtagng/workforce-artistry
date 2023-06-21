@@ -1,0 +1,40 @@
+@import url(./main.css);
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* Header */
+header {
+  margin-block: 1rem;
+  font-size: .875rem;
+}
+
+header .container {
+  border-bottom: 2px solid #febc2f;
+  padding-bottom: 1rem;
+}
+
+header > .flex {
+  --gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-weight: 700;
+}
+
+.header__nav li {
+  list-style: none;
+}
+
+/* 
+  Hero
+*/
+.hero {
+  
+}
