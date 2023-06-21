@@ -80,6 +80,16 @@ html:focus-within {
   font-family: Poppins, sans-serif;
 }
 
+body {
+  font-size: 1rem;
+}
+
+@media (max-width: 50em) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+
 .container {
   max-width: min(1280px, 100% - 2rem);
   margin-inline: auto;
@@ -125,6 +135,7 @@ html:focus-within {
   border: 0;
   border-radius: .5rem;
   padding: .5rem 1rem;
+  font-weight: 700;
   text-decoration: none;
   color: inherit;
 }
