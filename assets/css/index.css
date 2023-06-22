@@ -1,0 +1,194 @@
+@import url(./main.css);
+
+h1 {
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 2.5rem);
+  line-height: 1.1;
+}
+
+/* 
+  Header 
+*/
+header {
+  margin-block: 1rem;
+  font-size: .875rem;
+}
+
+header .container {
+  border-bottom: 2px solid var(--clr-primary);
+  padding-bottom: 1rem;
+}
+
+.header__logo img {
+  width: 85%;
+}
+
+header > .flex {
+  --gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-weight: 700;
+}
+
+.header__nav li {
+  list-style: none;
+}
+
+@media (max-width: 50em) {
+  .header__nav,
+  .header__buttons {
+    display: none;
+  }
+}
+
+/* 
+  Hero
+*/
+.hero {
+  margin-block: 1rem;
+}
+
+.hero .container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__text {
+  max-width: 50ch;
+}
+
+.hero__text > * {
+  margin-bottom: 1rem;
+  margin-trim: block-end;
+}
+
+@media (max-width: 50em) {
+  .hero .grid {
+    text-align: center;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .hero__text {
+    max-width: 500px;
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  .hero__img {
+    max-width: 85%;
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+  }
+}
+
+/* 
+  Logomarks
+*/
+.logomarks {
+  margin-block: 2rem;
+  padding-block: 2rem;
+  background-color: var(--clr-primary-light);
+}
+
+.logomark img {
+  width: 90%;
+}
+
+.logomarks .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 50em) {
+  .logomark img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 50em) {
+  .logomark img {
+    width: 80%;
+  }
+}
+
+/* 
+  Expertise
+*/
+.expertises {
+  text-align: center;
+  padding-block: 4rem; 
+  padding-inline: 8rem;
+  background-image: url(../images/expertise-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.expertises h2 {
+  font-size: 2rem;
+}
+
+.expertises h2,
+.expertises h3 {
+  color: var(--clr-primary);
+}
+
+.expertises p {
+  color: white;
+}
+
+.expertises .container > p {
+  font-size: 1.5rem;
+}
+
+.expertises h3 {
+  font-size: 20px;
+}
+
+.expertises__grid {
+  --gap: 1rem;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  margin-inline: auto;
+  padding-block: 4rem;
+}
+
+.expertise {
+  --gap: .75rem;
+  align-items: center;
+  text-align: left;
+}
+
+.expertises .btn {
+  color: var(--clr-secondary);
+}
+
+@media (max-width: 65em) {
+  .expertises {
+    padding-inline: 0;
+  }
+
+  .expertises__grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .expertise {
+    max-width: 45ch;
+  }
+}
+
+/* 
+  Services
+*/
+.services {
+  padding-block: 4rem;
+  background-color: var(--clr-primary-light);
+}
