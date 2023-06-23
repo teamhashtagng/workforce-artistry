@@ -222,7 +222,7 @@ header a {
 }
 
 .services .grid {
-  --gap: 5%;
+  --gap: 4rem;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 6rem;
   padding-inline: 4rem;
@@ -257,9 +257,10 @@ header a {
 
 @media (max-width: 65em) {
   .services .grid {
+    --gap: 3rem;
     grid-template-columns: 1fr 1fr;
     place-content: center;
-    row-gap: 10rem;
+    row-gap: 6rem;
     padding-inline: 1rem;
   }
 }
@@ -353,6 +354,11 @@ header a {
   .download__buttons {
     --gap: .5rem;
     place-content: center;
+  }
+
+  .btn--download {
+    --gap: .25rem;
+    padding: .5rem .75rem;
   }
 
   .btn--download span {
@@ -479,5 +485,49 @@ header a {
 
   .form__btn input {
     width: 100%;
+  }
+}
+
+/* 
+  Footer
+*/
+footer {
+  padding-bottom: 4rem;
+  color: white;
+  background-color: var(--clr-secondary);
+}
+
+footer p {
+  color: white;
+  font-size: .875rem;
+}
+
+footer .grid {
+  --gap: 10rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 4rem;
+}
+
+footer .row > * {
+  margin-bottom: 2rem;
+}
+
+footer h2 {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--clr-primary);
+}
+
+.footer__download-btns  > * {
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 50em) {
+  footer .grid {
+    --gap: 4rem;
+    grid-template-columns: 1fr;
   }
 }
