@@ -62,7 +62,7 @@ header a {
     background-color: var(--clr-primary-light);
 
     transform: translateX(100%);
-    transition: all 3s ease-in-out;
+    transition: all 350ms ease-in-out;
   }
 
   .primary-navigation[data-visible="true"] {
