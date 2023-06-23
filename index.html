@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workforce Artistry</title>
+  <title>Workforce Artistry | Home</title>
+  <link rel="shortcut icon" href="./assets/logo/workforce-logo.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
   <header>
@@ -16,12 +18,12 @@
         <img src="./assets/logo/workforce-logo.svg" alt="Workforce Logo">
       </div>
 
-      <button class="nav-toggle" aria-expanded="false">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">Menu</span>
       </button>
 
       <nav class="header__nav flex">
-        <ul class="flex gap-2">
+        <ul id="primary-navigation" class="primary-navigation flex gap-2" data-visible="false">
           <li>
             <a href="">Home</a>
           </li>
@@ -35,7 +37,7 @@
             <a href="">Services</a>
           </li>
           <li>
-            <a href="">Blogs</a>
+            <a href="">Blog</a>
           </li>
         </ul>
       </nav>
@@ -90,13 +92,13 @@
 
     <section class="expertises">
       <div class="container">
-        <h2>What We Do Best</h2>
-        <p>We are well known for</p>
+        <h2 class="fs-xlarge clr-primary">What We Do Best</h2>
+        <p class="fs-large">We are well known for</p>
         <div class="expertises__grid grid">
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Creativity and Innovation</h3>
+              <h3 class="fs-large clr-primary">Creativity and Innovation</h3>
               <p>Our cultivation of innovation and creativity is indispensable to achieving success.</p>
             </div>
           </div>
@@ -104,7 +106,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Personalization and Customization</h3>
+              <h3 class="fs-large clr-primary">Personalization and Customization</h3>
               <p>We understand clients' preferences and transform their ideas into customized products or artwork.</p>
             </div>
           </div>
@@ -112,7 +114,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Attention to Details</h3>
+              <h3 class="fs-large clr-primary">Attention to Details</h3>
               <p>Our attention to details allows us to think outside the box and push the boundaries of unique techniques.</p>
             </div>
           </div>
@@ -120,7 +122,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Commitment to Quality</h3>
+              <h3 class="fs-large clr-primary">Commitment to Quality</h3>
               <p>Deep commitment to delivering high-quality products and also prioritize the use of premium materials.</p>
             </div>
           </div>
@@ -133,8 +135,168 @@
       <div class="container">
         <h2>Services</h2>
         <p>Our skilled artisans bring their talents and passion for custom pieces and restoration work to your home, bringing your vision to life.</p>
+        <div class="grid">
+          <div class="service">
+            <img src="./assets/images/artisans.svg" alt="">
+            <p class="fs-small">Order Online</p>
+          </div>
+
+          <div class="service">
+            <img src="./assets/images/managers.svg" alt="">
+            <p class="fs-small">Check Site Managers</p>
+          </div>
+
+          <div class="service">
+            <img src="./assets/images/materials.svg" alt="">
+            <p class="fs-small">Buy Materials</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location">
+      <div class="container grid">
+        <h2 class="clr-primary fs-large">20K+ Artisan in Key Location in Lagos</h2>
+        <img src="./assets/images/location.svg" alt="">
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download">
+      <div class="container">
+        <h2 class="fs-large clr-primary">Download</h2>
+        <p>The Job Sharing App</p>
+        <div class="grid">
+          <div class="download__text">
+            <p>The WorkForce Artistry app is available for free download, allowing you to connect with skilled artisans near you.</p>
+            <p>Find talented local artists easily with WorkForce Artistry's app. Get skilled professionals for your project, including woodworkers and metalworkers, all in one place.</p>
+            <div class="download__buttons flex">
+              <a href="#" class="btn btn--download flex">
+                <img src="./assets/icons/google-play-icon.svg" alt="">
+                <span>Download on Google Play</span>
+              </a>
+              <a href="#" class="btn btn--download flex">
+                <img src="./assets/icons/app-store-icon.svg" alt="">
+                <span>Download on App Store</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="download__img">
+            <img src="./assets/images/app-screen.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="earn">
+      <div class="container">
+        <h2 class="clr-primary fs-large">Earn with Us</h2>
+        <p>Join our community and earn with the Job Sharing App.</p>
+        <div class="grid">
+          <div class="earn__img">
+            <img src="./assets/images/earn.svg" alt="">
+          </div>
+          <div class="earn__text">
+            <div class="flex">
+              <img src="./assets/icons/black-star.svg" alt="">
+              <p class="fs-normal">An opportunity to turn your passion into profit</p>
+            </div>
+            <div class="flex">
+              <img src="./assets/icons/black-star.svg" alt="">
+              <p class="fs-normal">Showcase your artisan skills</p>
+            </div>
+            <div class="flex">
+              <img src="./assets/icons/black-star.svg" alt="">
+              <p class="fs-normal">Connect with individuals in need of your service</p>
+            </div>
+            <div class="flex">
+              <img src="./assets/icons/black-star.svg" alt="">
+              <p class="fs-normal">Sign up to start earning with us</p>
+            </div>
+            <a href="#" class="btn btn--primary earn__btn">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <h2 class="fs-large">Subscribe</h2>
+        <form>
+          <div class="form-wrapper flex">
+            <div class="email-field flex">
+              <img src="./assets/icons/mail-icon.svg" alt="">
+              <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form__btn">
+              <input type="button" value="Submit">
+            </div>
+          </div>
+        </form>
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="grid">
+        <div class="row">
+          <h2>About US</h2>
+          <p>Our app is user-friendly and hassle-free, helping people find work. Our satisfied user community assures you'll love it.</p>
+          <div class="flex gap-1">
+            <a href="https://facebook.com">
+              <img src="./assets/icons/facebook-icon.svg" alt="">
+            </a>
+            <a href="https://linkedin.com">
+              <img src="./assets/icons/linkedin-icon.svg" alt="">
+            </a>
+            <a href="https://instagram.com">
+              <img src="./assets/icons/instagram-icon.svg" alt="">
+            </a>
+            <a href="https://twitter.com">
+              <img src="./assets/icons/twitter-icon.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Download</h2>
+          <p>The WorkForce Artistry app is available for free download, allowing you to connect with skilled artisans near you.</p>
+          <div class="footer__download-btns">
+            <div class="flex gap-1">
+              <p class="clr-primary">Android Users</p>
+              <img src="./assets/icons/google-play-icon.svg" alt="">
+            </div>
+            <div class="flex gap-1">
+              <p class="clr-primary">IOS Users</p>
+              <img src="./assets/icons/app-store-icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Contact</h2>
+          <div class="flex gap-1">
+            <img src="./assets/icons/phone-icon.svg" alt="">
+            <p>+234 (706-529-6880)</p>
+          </div>
+          <div class="flex gap-1">
+            <img src="./assets/icons/mail-icon-white.svg" alt="">
+            <p>info@wfartistry.com</p>
+          </div>
+          <div class="flex gap-1">
+            <img src="./assets/icons/web-icon.svg" alt="">
+            <p>www.wfartistry.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2023 WorkForceArtistry. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
