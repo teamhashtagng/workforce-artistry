@@ -344,6 +344,16 @@ footer h2 {
   text-align: center;
 }
 
+.attribution p {
+  margin-top: 2rem;
+  font-size: .65rem;
+}
+
+.attribution a {
+  color: #008cff;
+  text-decoration: none;
+}
+
 @media (max-width: 50em) {
   footer .grid {
     --gap: 4rem;
