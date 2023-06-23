@@ -281,3 +281,202 @@ header a {
     place-content: center;
   }
 }
+
+/* 
+  Location
+*/
+.location {
+  padding: 2rem;
+  margin-block: 2rem;
+  text-align: center;
+  background-color: var(--clr-primary-light);
+}
+
+.location .grid {
+  --gap: 1rem;
+  place-items: center;
+}
+
+/*
+  Download
+*/
+.download {
+  text-align: center;
+}
+
+.download .grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.download__text {
+  text-align: left;
+  align-self: end;
+  padding-bottom: 1rem;
+}
+
+.download__text > * {
+  margin-bottom: 2rem;
+  margin-trim: block-end;
+}
+
+.download__buttons {
+  --gap: .5rem;
+}
+
+.btn--download {
+  --gap: .5rem;
+  align-items: center;
+  font-weight: normal;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+.btn--download:nth-child(2) > span {
+  padding-top: .2rem;
+}
+
+@media (max-width: 50em) {
+  .download .grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .download__text {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+  .download__buttons {
+    --gap: .5rem;
+    place-content: center;
+  }
+
+  .btn--download span {
+    font-size: .4rem;
+  }
+
+  .download__img {
+    display: none;
+  }
+}
+
+/* 
+  Earn
+*/
+.earn {
+  text-align: center;
+}
+
+.earn .grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.earn__text div {
+  text-align: left;
+  --gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.earn__btn {
+  color: black;
+  padding-inline: 2.5rem;
+}
+
+@media (max-width: 50em) {
+  .earn .grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .earn__text {
+    text-align: center;
+  }
+
+  .earn__btn {
+    padding-inline: 1.5rem;
+  }
+}
+
+.subscribe {
+  padding: 2rem;
+  margin-block: 2rem;
+  text-align: center;
+  background-color: var(--clr-primary);
+}
+
+.subscribe form {
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  width: 30%;
+  margin-inline: auto;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.email-field {
+  --gap: .25rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem 1.5rem;
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.email-field input {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.email-field input::placeholder {
+  font-size: .75rem;
+  font-weight: 700;
+  color: #7A7474;
+}
+
+.form__btn {
+  justify-self: flex-end;
+  margin-left: -.75rem;
+}
+
+.form__btn input {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: 0;
+  font-size: .875rem;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 50em) {
+  .form-wrapper {
+    width: auto;
+  }
+
+  .form-wrapper.flex {
+    flex-direction: column;
+  }
+
+  .email-field {
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: 1rem;
+  }
+
+  .form__btn {
+    margin-left: 0;
+  }
+
+  .form__btn input {
+    width: 100%;
+  }
+}
