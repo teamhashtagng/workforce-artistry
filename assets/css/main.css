@@ -306,3 +306,47 @@ header a {
     background-image: url(../icons/icon-close.svg);
   }
 }
+
+/* 
+  Footer
+*/
+footer {
+  padding-bottom: 4rem;
+  color: white;
+  background-color: var(--clr-secondary);
+}
+
+footer p {
+  color: white;
+  font-size: .875rem;
+}
+
+footer .grid {
+  --gap: 10rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 4rem;
+}
+
+footer .row > * {
+  margin-bottom: 2rem;
+}
+
+footer h2 {
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--clr-primary);
+}
+
+.footer__download-btns  > * {
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 50em) {
+  footer .grid {
+    --gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+}
