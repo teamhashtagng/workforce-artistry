@@ -86,6 +86,7 @@ html:focus-within {
 
 body {
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 p {
@@ -99,7 +100,7 @@ p {
 }
 
 .container {
-  max-width: min(1280px, 100% - 2rem);
+  max-width: min(1280px, 100% - 3rem);
   margin-inline: auto;
 }
 

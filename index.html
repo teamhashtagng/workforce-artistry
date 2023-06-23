@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
   <header>
@@ -16,12 +17,12 @@
         <img src="./assets/logo/workforce-logo.svg" alt="Workforce Logo">
       </div>
 
-      <button class="nav-toggle" aria-expanded="false">
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">Menu</span>
       </button>
 
       <nav class="header__nav flex">
-        <ul class="flex gap-2">
+        <ul id="primary-navigation" class="primary-navigation flex gap-2" data-visible="false">
           <li>
             <a href="">Home</a>
           </li>
@@ -35,7 +36,7 @@
             <a href="">Services</a>
           </li>
           <li>
-            <a href="">Blogs</a>
+            <a href="">Blog</a>
           </li>
         </ul>
       </nav>
@@ -90,13 +91,13 @@
 
     <section class="expertises">
       <div class="container">
-        <h2>What We Do Best</h2>
-        <p>We are well known for</p>
+        <h2 class="fs-xlarge clr-primary">What We Do Best</h2>
+        <p class="fs-large">We are well known for</p>
         <div class="expertises__grid grid">
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Creativity and Innovation</h3>
+              <h3 class="fs-large clr-primary">Creativity and Innovation</h3>
               <p>Our cultivation of innovation and creativity is indispensable to achieving success.</p>
             </div>
           </div>
@@ -104,7 +105,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Personalization and Customization</h3>
+              <h3 class="fs-large clr-primary">Personalization and Customization</h3>
               <p>We understand clients' preferences and transform their ideas into customized products or artwork.</p>
             </div>
           </div>
@@ -112,7 +113,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Attention to Details</h3>
+              <h3 class="fs-large clr-primary">Attention to Details</h3>
               <p>Our attention to details allows us to think outside the box and push the boundaries of unique techniques.</p>
             </div>
           </div>
@@ -120,7 +121,7 @@
           <div class="expertise flex">
             <img src="./assets/icons/star-icon.svg" alt="">
             <div>
-              <h3>Commitment to Quality</h3>
+              <h3 class="fs-large clr-primary">Commitment to Quality</h3>
               <p>Deep commitment to delivering high-quality products and also prioritize the use of premium materials.</p>
             </div>
           </div>
@@ -133,6 +134,22 @@
       <div class="container">
         <h2>Services</h2>
         <p>Our skilled artisans bring their talents and passion for custom pieces and restoration work to your home, bringing your vision to life.</p>
+        <div class="grid">
+          <div class="service">
+            <img src="./assets/images/artisans.svg" alt="">
+            <p class="fs-small">Order Online</p>
+          </div>
+
+          <div class="service">
+            <img src="./assets/images/managers.svg" alt="">
+            <p class="fs-small">Check Site Managers</p>
+          </div>
+
+          <div class="service">
+            <img src="./assets/images/materials.svg" alt="">
+            <p class="fs-small">Buy Materials</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
