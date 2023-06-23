@@ -1,1 +1,73 @@
 @import url(./main.css);
+
+/*
+  Download
+*/
+.download {
+  text-align: center;
+}
+
+.download .grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.download__text {
+  text-align: left;
+  align-self: end;
+  padding-bottom: 1rem;
+}
+
+.download__text > * {
+  margin-bottom: 2rem;
+  margin-trim: block-end;
+}
+
+.download__buttons {
+  --gap: .5rem;
+}
+
+.btn--download {
+  --gap: .5rem;
+  align-items: center;
+  font-weight: normal;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+.btn--download:nth-child(2) > span {
+  padding-top: .2rem;
+}
+
+@media (max-width: 50em) {
+  .download .grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .download__text {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+
+  .download__buttons {
+    --gap: .5rem;
+    place-content: center;
+  }
+
+  .btn--download {
+    --gap: .25rem;
+    padding: .5rem .75rem;
+  }
+
+  .btn--download span {
+    font-size: .4rem;
+  }
+
+  .download__img {
+    display: none;
+  }
+}
