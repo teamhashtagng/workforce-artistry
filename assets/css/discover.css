@@ -1,4 +1,100 @@
 @import url(./main.css);
+/* 
+  Categories
+*/
+.categories {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+.categories__grid {
+  --gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.category {
+  place-items: center;
+}
+
+.category p {
+  margin-top: 1rem;
+  color: black;
+}
+
+.category p:hover {
+  color: var(--clr-primary);
+}
+
+.category a {
+  text-decoration: none;
+}
+
+@media (max-width: 35em) {
+  .categories__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .categories__grid > :last-child {
+    display: none;
+  }
+}
+
+/* 
+  Vendors
+*/
+.vendors {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+.vendors__grid {
+  --gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.vendor {
+  place-items: center;
+}
+
+.vendor p {
+  margin-top: 1rem;
+  color: black;
+}
+
+.vendor p:hover {
+  color: var(--clr-primary);
+}
+
+.vendor a {
+  text-decoration: none;
+}
+
+@media (max-width: 35em) {
+  .vendors__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vendors__grid > :last-child {
+    display: none;
+  }
+}
+
+/* 
+  Ads
+*/
+.ads {
+  margin-block: 4rem;
+}
+
+.ads img {
+  width: 100%;
+}
 
 /*
   Download
