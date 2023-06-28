@@ -64,7 +64,8 @@ h1 {
 }
 
 .logomarks .flex {
-  justify-content: space-between;
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
 }
 
