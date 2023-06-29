@@ -64,7 +64,7 @@ h1 {
 }
 
 .logomarks .flex {
-  gap: 1rem;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
 }
@@ -78,6 +78,10 @@ h1 {
 @media (max-width: 50em) {
   .logomark img {
     width: 80%;
+  }
+
+  .logomarks .flex {
+    gap: 1rem;
   }
 }
 

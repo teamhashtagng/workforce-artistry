@@ -228,7 +228,7 @@ p {
   Header 
 */
 header {
-  margin-block: 1rem;
+  margin-block: 1rem .5rem;
   font-size: 0.875rem;
 }
 
@@ -238,7 +238,7 @@ header .container {
 }
 
 .header__logo img {
-  width: 85%;
+  width: 100%;
 }
 
 header > .flex {
@@ -267,10 +267,6 @@ header a:not(.btn):hover {
 }
 
 @media (max-width: 55em) {
-  .header__logo img {
-    width: 70%;
-  }
-
   .header__buttons {
     display: none;
   }
@@ -302,7 +298,7 @@ header a:not(.btn):hover {
     width: 1.25rem;
     aspect-ratio: 1;
     border: 0;
-    top: 2.25rem;
+    top: 1.75rem;
     right: 2rem;
   }
 
@@ -325,6 +321,11 @@ footer p {
   font-size: 0.875rem;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
 footer .grid {
   --gap: 10rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -342,6 +343,10 @@ footer h2 {
 
 .footer__download-btns > * {
   margin-bottom: 1rem;
+}
+
+.footer__download-btns a {
+  font-weight: bold;
 }
 
 .copyright {
