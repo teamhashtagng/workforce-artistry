@@ -1,0 +1,18 @@
+@import url(./main.css);
+
+/* Brand */
+.brand {
+  margin-block: 2rem;
+  text-align: center;
+}
+
+.brand h2 {
+  margin-bottom: 1rem;
+}
+
+.brand p {
+  margin-bottom: 2rem;
+  text-align: left;
+  line-height: 2.5;
+  color: black;
+}
