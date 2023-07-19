@@ -1,16 +1,16 @@
 @import url(./main.css);
 
 /* User Safety */
-.user-safety {
+.client-safety {
   margin-block: 4rem;
 }
 
-.user-safety .container.grid {
+.client-safety .container.grid {
   grid-template-columns: repeat(2, 1fr);
   align-items: end;
 }
 
-.user-safety__text {
+.client-safety__text {
   max-width: min(50ch, 100%);
   --gap: 1rem;
 }
@@ -33,18 +33,18 @@
 }
 
 @media screen and (max-width: 35em) {
-  .user-safety .container.grid {
+  .client-safety .container.grid {
     grid-template-columns: 1fr;
     align-items: center;
     text-align: center;
   }
 
-  .user-safety__text {
+  .client-safety__text {
     max-width: 35ch;
     margin-inline: auto;
   }
 
-  .user-safety__image {
+  .client-safety__image {
     margin-inline: auto;
     margin-top: 1rem;
   }

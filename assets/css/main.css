@@ -190,7 +190,7 @@ p {
 
 .grid-sm {
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .sr-only {
