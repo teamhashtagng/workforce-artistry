@@ -1,2 +1,2 @@
 # workforce-artistry
-A Website for Workforce Artistry Startup
+A Website for Mavoye Artistry Startup
