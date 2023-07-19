@@ -188,6 +188,11 @@ p {
   gap: var(--gap);
 }
 
+.grid-sm {
+  display: grid;
+  gap: .5rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -203,7 +208,7 @@ p {
 .btn {
   border: 0;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 1rem;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -233,7 +238,7 @@ header {
 }
 
 header .container {
-  border-bottom: 2px solid var(--clr-primary);
+  border-bottom: 1px solid var(--clr-primary);
   padding-bottom: 1rem;
 }
 
@@ -272,6 +277,7 @@ header a:not(.btn):hover {
   }
 
   .primary-navigation {
+    display: none;  
     --gap: 2.5em;
     position: fixed;
     z-index: 1000;
@@ -285,6 +291,7 @@ header a:not(.btn):hover {
   }
 
   .primary-navigation[data-visible="true"] {
+    display: flex;
     transform: translateX(0%);
   }
 
@@ -298,7 +305,7 @@ header a:not(.btn):hover {
     width: 1.25rem;
     aspect-ratio: 1;
     border: 0;
-    top: 1.75rem;
+    top: 2.25rem;
     right: 2rem;
   }
 
@@ -311,7 +318,7 @@ header a:not(.btn):hover {
   Footer
 */
 footer {
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   color: white;
   background-color: var(--clr-secondary);
 }

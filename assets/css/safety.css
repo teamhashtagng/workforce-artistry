@@ -1,0 +1,117 @@
+@import url(./main.css);
+
+/* User Safety */
+.client-safety {
+  margin-block: 4rem;
+}
+
+.client-safety .container.grid {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+}
+
+.client-safety__text {
+  max-width: min(50ch, 100%);
+  --gap: 1rem;
+}
+
+/* Service List */
+.service-list {
+  margin-block: 4rem;
+}
+
+.service-list .container.grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+}
+
+@media screen and (max-width: 50em) {
+  .service-list .container.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .client-safety .container.grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .client-safety__text {
+    max-width: 35ch;
+    margin-inline: auto;
+  }
+
+  .client-safety__image {
+    margin-inline: auto;
+    margin-top: 1rem;
+  }
+
+  .service-list .container.grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Download */
+.download {
+  margin-block: 8rem 4rem;
+}
+
+.download .container {
+  padding-inline: 13rem;
+}
+
+.download .container > .flex {
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  margin-top: -4rem;
+}
+
+.btn--download {
+  --gap: .5rem;
+  align-items: center;
+  font-weight: normal;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 82em) {
+  .download .container {
+    padding-inline: 10rem;
+  }
+}
+
+@media (max-width: 80em) {
+  .download .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 55em) {
+  .download {
+    margin-block: 4rem;
+  }
+
+  .download .container {
+    padding-inline: 0;
+    text-align: center;
+  }
+
+  .download .container > .flex {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .download__buttons {
+    order: 2;
+  }
+
+  .download__image {
+    order: 1;
+  }
+}
