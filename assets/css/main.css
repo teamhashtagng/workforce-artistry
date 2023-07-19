@@ -208,7 +208,7 @@ p {
 .btn {
   border: 0;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 1rem;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
@@ -238,7 +238,7 @@ header {
 }
 
 header .container {
-  border-bottom: 2px solid var(--clr-primary);
+  border-bottom: 1px solid var(--clr-primary);
   padding-bottom: 1rem;
 }
 
