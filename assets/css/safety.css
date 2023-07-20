@@ -71,6 +71,10 @@
   margin-top: -4rem;
 }
 
+.download__buttons {
+  gap: 1rem;
+}
+
 .btn--download {
   --gap: .5rem;
   align-items: center;
