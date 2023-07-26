@@ -14,3 +14,13 @@ function toggleNav() {
     navToggle.setAttribute("aria-expanded", false);
   } 
 }
+
+function closeNav(event) {
+  const isOutside = !event.target.closest("header");
+  if (isOutside) {
+    primaryNav.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+  }
+}
+
+window.addEventListener("click", closeNav);
