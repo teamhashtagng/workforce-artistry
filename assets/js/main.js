@@ -27,7 +27,6 @@ function closeNav(event) {
 window.addEventListener("click", closeNav);
 
 function toggleNavDropdown() {
-  const navDropdownMenu = event.currentTarget.querySelector("ul");
   const isSelected = navDropdown.getAttribute("aria-selected");
   if (isSelected === "true") {
     navDropdown.setAttribute("aria-selected", "false");
