@@ -415,6 +415,23 @@ h1 {
   place-items: center;
 }
 
+.location__image {
+  cursor: pointer;
+  background-image: url(../images/map-bg.svg);
+}
+
+.location__image img {
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(2%);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.location__image img:hover {
+  opacity: 1;
+  transform: translate(0);
+}
+
 /*
   Download
 */
