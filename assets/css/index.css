@@ -487,16 +487,20 @@ h1 {
 
   .download__buttons {
     --gap: .5rem;
+    flex-direction: column;
     place-content: center;
   }
 
   .btn--download {
-    --gap: .25rem;
+    --gap: .5rem;
+    width: 15rem;
+    margin-inline: auto;
+    justify-content: center;
     padding: .5rem .75rem;
   }
 
   .btn--download span {
-    font-size: .4rem;
+    font-size: .875remrem;
   }
 
   .download__img {
@@ -545,7 +549,7 @@ h1 {
 
 .subscribe {
   padding: 2rem;
-  margin-block: 2rem;
+  margin-top: 2rem;
   text-align: center;
   background-color: var(--clr-primary);
 }

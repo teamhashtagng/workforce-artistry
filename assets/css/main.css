@@ -341,8 +341,8 @@ header a:not(.btn):hover {
     width: 1.25rem;
     aspect-ratio: 1;
     border: 0;
-    top: 2.25rem;
-    right: 2rem;
+    top: 1.75rem;
+    right: 2rem;  
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
