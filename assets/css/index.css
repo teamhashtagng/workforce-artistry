@@ -20,7 +20,7 @@ h1 {
   max-width: 50ch;
 }
 
-.hero__text>* {
+.hero__text > * {
   margin-bottom: 1rem;
   margin-trim: block-end;
 }
@@ -45,7 +45,7 @@ h1 {
   left: 50%;
   margin-top: -10%;
   margin-left: -10%;
-  animation: pulse1 3.5s infinite;
+  animation: pulse1 3s infinite;
 }
 
 .circle:nth-child(2) {
@@ -55,7 +55,7 @@ h1 {
   left: 50%;
   margin-top: -20%;
   margin-left: -20%;
-  animation: pulse2 3.5s infinite;
+  animation: pulse2 3s infinite;
 }
 
 .circle:nth-child(3) {
@@ -65,7 +65,7 @@ h1 {
   left: 50%;
   margin-top: -30%;
   margin-left: -30%;
-  animation: pulse3 3.5s infinite;
+  animation: pulse3 3s infinite;
 }
 
 .circle:nth-child(4) {
@@ -75,7 +75,7 @@ h1 {
   left: 50%;
   margin-top: -40%;
   margin-left: -40%;
-  animation: pulse4 3.5s infinite;
+  animation: pulse4 3s infinite;
 }
 
 .circle:nth-child(5) {
@@ -85,7 +85,7 @@ h1 {
   left: 50%;
   margin-top: -50%;
   margin-left: -50%;
-  animation: pulse5 3.5s infinite;
+  animation: pulse5 3s infinite;
 }
 
 @keyframes pulse1 {
@@ -415,6 +415,23 @@ h1 {
   place-items: center;
 }
 
+.location__image {
+  cursor: pointer;
+  background-image: url(../images/map-bg.svg);
+}
+
+.location__image img {
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(2%);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.location__image img:hover {
+  opacity: 1;
+  transform: translate(0);
+}
+
 /*
   Download
 */
@@ -470,16 +487,20 @@ h1 {
 
   .download__buttons {
     --gap: .5rem;
+    flex-direction: column;
     place-content: center;
   }
 
   .btn--download {
-    --gap: .25rem;
+    --gap: .5rem;
+    width: 15rem;
+    margin-inline: auto;
+    justify-content: center;
     padding: .5rem .75rem;
   }
 
   .btn--download span {
-    font-size: .4rem;
+    font-size: .875remrem;
   }
 
   .download__img {
@@ -528,7 +549,7 @@ h1 {
 
 .subscribe {
   padding: 2rem;
-  margin-block: 2rem;
+  margin-top: 2rem;
   text-align: center;
   background-color: var(--clr-primary);
 }
