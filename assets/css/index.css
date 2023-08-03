@@ -457,6 +457,8 @@ h1 {
 
 .download__buttons {
   --gap: .5rem;
+  opacity: .75;
+  pointer-events: none;
 }
 
 .btn--download {
@@ -470,6 +472,15 @@ h1 {
 
 .btn--download:nth-child(2) > span {
   padding-top: .2rem;
+}
+
+.coming-soon-badge {
+  position: relative;
+  top: 1.875rem;
+  opacity: .75;
+  pointer-events: none;
+  font-size: .75rem;
+  background-color: var(--clr-primary);
 }
 
 @media (max-width: 50em) {

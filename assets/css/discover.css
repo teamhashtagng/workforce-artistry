@@ -121,6 +121,8 @@
 
 .download__buttons {
   --gap: .5rem;
+  opacity: .75;
+  pointer-events: none;
 }
 
 .btn--download {
@@ -134,6 +136,15 @@
 
 .btn--download:nth-child(2) > span {
   padding-top: .2rem;
+}
+
+.coming-soon-badge {
+  position: relative;
+  top: 1.875rem;
+  opacity: .75;
+  pointer-events: none;
+  font-size: .75rem;
+  background-color: var(--clr-primary);
 }
 
 @media (max-width: 50em) {
@@ -151,16 +162,20 @@
 
   .download__buttons {
     --gap: .5rem;
+    flex-direction: column;
     place-content: center;
   }
 
   .btn--download {
-    --gap: .25rem;
+    --gap: .5rem;
+    width: 15rem;
+    margin-inline: auto;
+    justify-content: center;
     padding: .5rem .75rem;
   }
 
   .btn--download span {
-    font-size: .4rem;
+    font-size: .875remrem;
   }
 
   .download__img {
