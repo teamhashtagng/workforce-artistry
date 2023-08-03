@@ -397,10 +397,21 @@ footer h2 {
 
 .footer__download-btns > * {
   margin-bottom: 1rem;
+  opacity: .75;
+  pointer-events: none;
 }
 
 .footer__download-btns a {
   font-weight: bold;
+}
+
+.footer-coming-soon-badge {
+  position: relative;
+  top: .5rem;
+  opacity: .75;
+  pointer-events: none;
+  font-size: .75rem;
+  background-color: var(--clr-primary);
 }
 
 .copyright {
